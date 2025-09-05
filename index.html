@@ -30,11 +30,52 @@
                     Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do
                     Amanhã.
                 </p>
+
+                <form method="post" enctype="multipart/form-data">
+                    <fieldset class="child-info">
+                        <legend>Informações da criança</legend>
+
+                        <div class="input-wraper">
+                            <label for="fullname">Nome completo</label>
+                            <input id="fullname" name="fullname" type="text" placeholder="Qual o nome da criança?">
+                        </div>
+
+                        <div class="input-wraper">
+                            <label for="birth">Data de nascimento</label>
+                            <input id="birth" name="birth" type="date" lang="pt-BR">
+                        </div>
+
+                        <div class="select-wraper">
+                            <label for="gender">Sexo</label>
+                            <select name="gender" id="gender">
+                                <option value="female">Feminino</option>
+                                <option value="male">Masculino</option>
+                                <option value="na">Prefiro não responder</option>
+                            </select>
+                        </div>
+
+                        <div class="text-area-wraper">
+                            <label for="medical-info">Informações médicas</label>
+                            <textarea id="medical-info" name="medical-info" cols="30" rows="10"
+                                placeholder="A criança possui alguma condição médica que a escola deve estar ciente?"></textarea>
+                        </div>
+
+                        <div class="droparea-wraper">
+                            <label for="droparea">Certidão de nascimento</label>
+                            <input type="file" id="birth-file" name="birth-file">
+                            <img src="assets/icons/cloud-upload.svg" alt="">
+                            <p>
+                                Clique aqui para selecionar os arquivos
+                            </p>
+                        </div>
+
+                    </fieldset>
+                </form>
             </div>
         </main>
 
         <aside>
-            <div class="aside-container">
+            <div class=" aside-container">
                 <header>
                     <img src="assets/Logo.svg" alt="Icone de voltar">
                     <h2>
@@ -43,7 +84,8 @@
                         conta
                     </h2>
                     <p>
-                        Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e
+                        Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor,
+                        seguro e
                         estimulante.
                     </p>
                 </header>
