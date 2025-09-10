@@ -35,17 +35,17 @@
                     <fieldset class="child-info">
                         <legend>Informações da criança</legend>
 
-                        <div class="input-wraper">
+                        <div class="input-wrapper">
                             <label for="fullname">Nome completo</label>
                             <input id="fullname" name="fullname" type="text" placeholder="Qual o nome da criança?">
                         </div>
 
-                        <div class="input-wraper">
+                        <div class="input-wrapper">
                             <label for="birth">Data de nascimento</label>
                             <input id="birth" name="birth" type="date" lang="pt-BR">
                         </div>
 
-                        <div class="select-wraper">
+                        <div class="select-wrapper">
                             <label for="gender">Sexo</label>
                             <select name="gender" id="gender">
                                 <option value="female">Feminino</option>
@@ -54,13 +54,13 @@
                             </select>
                         </div>
 
-                        <div class="text-area-wraper">
+                        <div class="text-area-wrapper">
                             <label for="medical-info">Informações médicas</label>
                             <textarea id="medical-info" name="medical-info" cols="30" rows="5"
                                 placeholder="A criança possui alguma condição médica que a escola deve estar ciente?"></textarea>
                         </div>
 
-                        <div class="droparea-wraper">
+                        <div class="droparea-wrapper">
                             <label for="birth-file">Certidão de nascimento</label>
                             <div class="dropzone">
                                 <input type="file" id="birth-file" name="birth-file">
@@ -137,6 +137,29 @@
                             <div class="error">
                                 <img src="assets/icons/alert-circle.svg" alt="Icone de aleta vermelho">
                                 <span>Insira um e-mail válido</span>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="enroll-options">
+                        <legend>Opções de matrícula</legend>
+
+                        <div class="input-wrapper">
+                            <label for="">Selecione o turno de estudo</label>
+                            <div class="radio-wrapper">
+                                <div class="radio-inner">
+                                    <div class="radio-image"></div>
+                                    <input type="radio" name="study-shift" value="morning" id="morning">
+                                    <img src="assets/icons/sun-cloud-02.svg" alt="Icone de sol">
+                                    <label for="morning">Manhã</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <div class="radio-image"></div>
+                                    <input type="radio" name="study-shift" value="evening" id="evening">
+                                    <img src="assets/icons/sun-02.svg" alt="Icone de sol">
+                                    <label for="evening">Tarde</label>
+                                </div>
                             </div>
                         </div>
                     </fieldset>
